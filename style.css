@@ -1,12 +1,59 @@
-.weather-preview {
-  max-width: 600px;
+:root {
+  --primary-color: rgb(33, 37, 41);
+  --secondary-color: rgb(175, 91, 86);
+}
+
+@font-face {
+  font-family: scatterink;
+  src: url(/fonts/ScatterInk-MVVpJ.otf);
+}
+
+body,
+html {
+  margin-top: 50px;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+  background-color: var(--primary-color);
 }
 
 li {
   list-style: none;
 }
 
+h1 {
+  font-family: scatterink;
+}
+
+.weather-preview {
+  max-width: 600px;
+}
+
 .about-me {
   border-top: 2px solid;
   border-bottom: 2px solid;
+}
+.nav-link {
+  transition: all 250ms ease-in-out;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  height: 4px;
+  width: 0px;
+  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  transition: all 250ms ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+.nav-link:hover::after {
+  width: 45px;
+}
+.active::after {
+  width: 45px;
 }
