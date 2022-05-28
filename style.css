@@ -1,10 +1,12 @@
 :root {
   --primary-color: rgb(33, 37, 41);
   --secondary-color: rgb(175, 91, 86);
+  --header-font:'Scatter Ink';
+  --secondary-font:'Open Sans', sans-serif;
 }
 
 @font-face {
-  font-family: scatterink;
+  font-family: 'Scatter Ink';
   src: url(/fonts/ScatterInk-MVVpJ.otf);
 }
 
@@ -22,7 +24,31 @@ li {
 }
 
 h1 {
-  font-family: scatterink;
+  display:flex;
+  justify-content: center;
+  font-family: var(--header-font);
+  text-align:center;
+  font-size:200px;
+  margin-top: 125px;
+  margin-bottom: 40px;
+  color:var(--secondary-color);
+}
+h2 {
+font-family: var(--secondary-font);
+font-weight: 800;
+font-size: 24px;
+}
+
+p {
+font-family: var(--secondary-font);
+font-weight: 300;
+
+}
+.intro-paragraph {
+  text-align: center;
+  max-width:500px;
+  font-size: 12px;
+
 }
 
 .weather-preview {
