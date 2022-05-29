@@ -26,13 +26,24 @@ li {
 h1 {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: var(--header-font);
-  text-align: center;
   font-size: 200px;
-  margin-top: 150px;
   margin-bottom: 40px;
   color: var(--secondary-color);
 }
+
+.intro {
+  margin-top: 150px;
+  margin-bottom: 250px;
+  text-align: center;
+}
+
+intro-paragraph {
+  max-width: 500px;
+  font-size: 12px;
+}
+
 h2 {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -43,17 +54,16 @@ h3 {
   font-weight: 700;
   font-size: 32px;
   color: var(--secondary-color);
+  font-family: var(--header-font);
 }
-
+h4 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+}
 p {
   font-family: var(--secondary-font);
   font-weight: 300;
-}
-.intro-paragraph {
-  text-align: center;
-  max-width: 500px;
-  font-size: 12px;
-  margin-bottom: 200px;
 }
 
 .about-me {
@@ -84,38 +94,92 @@ p {
 .active::after {
   width: 45px;
 }
-
+.project-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
 .project-col {
   display: flex;
-  flex-flow: column;
-  gap: 1.7rem;
+  column-gap: 6vw;
 }
 
 .project {
-  width: 320px;
+  min-width: 24vw;
   height: 480px;
   background: #212225;
   border-radius: 0.8rem;
-  position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .weather {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
     url(/media/weather-check.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-position: center;
 }
+.landing-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    url(/media/total-landing-preview.png);
+    background-position: right;
+  }
+  .other-project {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    url(/media/screenshot-1.png);
+    background-position: right;
+  
+}
+
+.project-details {
+  margin-top: 370px;
+  padding-left: 15px;
+}
+
 .tag {
   color: rgb(54, 54, 54);
+  font-family: "Barlow Condensed", sans-serif;
+  padding-right: 15px;
 }
 
-/* Project details:
+.html {
+  color: #e34c25;
+}
 
-send all to bottom of column
+.css {
+  color: #563d7c;
+}
+.js {
+  color: #f1e05a;
+}
 
-title - h4
-tag-line - span - justfy evenly in a row
-source link - a
+@media (max-width: 425px) {
+  h1 {
+    font-size: 100px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .intro {
+    margin-bottom: 425px;
+  }
 
-*/
+  .intro-paragraph {
+    font-size: 10px;
+  }
+
+  .project-container {
+    display: block;
+  }
+
+  .project {
+    min-width: 100vw;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+  .project-details {
+    margin-top: 100px;
+  }
+}
