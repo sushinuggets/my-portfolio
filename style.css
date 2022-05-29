@@ -1,12 +1,12 @@
 :root {
   --primary-color: rgb(33, 37, 41);
   --secondary-color: rgb(175, 91, 86);
-  --header-font:'Scatter Ink';
-  --secondary-font:'Open Sans', sans-serif;
+  --header-font: "Scatter Ink";
+  --secondary-font: "Open Sans", sans-serif;
 }
 
 @font-face {
-  font-family: 'Scatter Ink';
+  font-family: "Scatter Ink";
   src: url(/fonts/ScatterInk-MVVpJ.otf);
 }
 
@@ -24,35 +24,36 @@ li {
 }
 
 h1 {
-  display:flex;
+  display: flex;
   justify-content: center;
   font-family: var(--header-font);
-  text-align:center;
-  font-size:200px;
-  margin-top: 125px;
+  text-align: center;
+  font-size: 200px;
+  margin-top: 150px;
   margin-bottom: 40px;
-  color:var(--secondary-color);
+  color: var(--secondary-color);
 }
 h2 {
-font-family: var(--secondary-font);
-font-weight: 800;
-font-size: 24px;
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 24px;
+}
+h3 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--secondary-color);
 }
 
 p {
-font-family: var(--secondary-font);
-font-weight: 300;
-
+  font-family: var(--secondary-font);
+  font-weight: 300;
 }
 .intro-paragraph {
   text-align: center;
-  max-width:500px;
+  max-width: 500px;
   font-size: 12px;
-
-}
-
-.weather-preview {
-  max-width: 600px;
+  margin-bottom: 200px;
 }
 
 .about-me {
@@ -83,3 +84,38 @@ font-weight: 300;
 .active::after {
   width: 45px;
 }
+
+.project-col {
+  display: flex;
+  flex-flow: column;
+  gap: 1.7rem;
+}
+
+.project {
+  width: 320px;
+  height: 480px;
+  background: #212225;
+  border-radius: 0.8rem;
+  position: relative;
+  overflow: hidden;
+}
+.weather {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    url(/media/weather-check.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tag {
+  color: rgb(54, 54, 54);
+}
+
+/* Project details:
+
+send all to bottom of column
+
+title - h4
+tag-line - span - justfy evenly in a row
+source link - a
+
+*/

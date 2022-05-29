@@ -16,21 +16,46 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="#"><img src="/media/developer-logo.png" alt="Megan Rose - Developer Logo" width="55"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand ms-3" href="#"
+          ><img
+            src="/media/developer-logo.png"
+            alt="Megan Rose - Developer Logo"
+            width="55"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-md-flex justify-content-center" id="navbarNavAltMarkup">
+        <div
+          class="collapse navbar-collapse d-md-flex justify-content-center"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav nav-fill w-50">
-            <a class="nav-link active" aria-current="page" href="/index.html" title="Homepage">Home</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/index.html"
+              title="Homepage"
+              >Home</a
+            >
             <a class="nav-link" href="#projects" title="Projects">Projects</a>
             <a class="nav-link" href="#about-me" title="About Me">About</a>
             <a class="nav-link" href="#contact" title="Contact">Contact</a>
@@ -38,7 +63,6 @@
         </div>
       </div>
     </nav>
-
 
     <main class="intro">
       <h1 class="">Megan</h1>
@@ -51,26 +75,74 @@
       </p>
     </main>
     <div id="projects">
-      <h3>Projects</h3>
-      <img
-        src="/media/weather-check.png"
-        alt="Preview of my Weather Check website"
-        class="weather-preview"
-      />
-      <ul>
-        <li class="project-title">Weather Check</li>
-        <li class="project-tools">HTML CSS JavaScript</li>
-      </ul>
-      <p class="project-description">
-        Simple websitite utilizing OpenWeather API to check current weather
-        conditions in a searched city or current location. Images change
-        according to weather report as well as a unit converstion tool between
-        Celsius and Fahrenheit
-      </p>
+      <h3>My Projects</h3>
+      <div class="container d-flex justify-content-evenly">
+        <div class="project-col">
+          <div class="project weather">
+            <h4 class="project-title">Weather Check</h4>
+            <div class="d-flex justify-content-evenly">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Source</a
+            >
+          </div>
+        </div>
+        <div class="project-col">
+          <div class="project landing-page">
+            <h4 class="project-title">Landing Page</h4>
+            <div class="d-flex justify-content-evenly">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Source</a
+            >
+          </div>
+        </div>
+        <div class="project-col">
+          <div class="project">
+            <h4 class="project-title">Other Project</h4>
+            <div class="d-flex justify-content-evenly">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Source</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- <div class="weather-preview">
+        
+        
+        <ul>
+          <li class="project-title">Weather Check</li>
+          <li class="project-tools">HTML CSS JavaScript</li>
+        </ul>
+        <p class="project-description">
+          Simple websitite utilizing OpenWeather API to check current weather
+          conditions in a searched city or current location. Images change
+          according to weather report as well as a unit converstion tool between
+          Celsius and Fahrenheit
+        </p>
+  
+        <a href="https://cute-granita-d18d98.netlify.app/" target="_blank"
+          >Launch Weather App</a
+        >
 
-      <a href="https://cute-granita-d18d98.netlify.app/" target="_blank"
-        >Launch Weather App</a
-      >
+      </div>
+      
+      <div class="landing-page-preview">
+
+      </div>
+      <div class="rating-component-preview">
+        
+      </div> -->
     </div>
     <div id="about-me">
       <h3>About Me</h3>
