@@ -67,6 +67,11 @@ p {
   font-weight: 300;
 }
 
+footer p {
+  font-size: 10px;
+
+  margin-bottom: 5px;
+}
 #projects {
   margin: 50px 0;
 }
@@ -112,8 +117,7 @@ p {
 }
 .project a {
   padding-right: 15px;
-  color:var(--secondary-color);
-  
+  color: var(--secondary-color);
 }
 .weather {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
@@ -137,7 +141,6 @@ p {
     url(/media/total-landing-preview.png);
   background-position: right;
   box-shadow: 4px 4px 20px rgb(50, 50, 50);
-  
 }
 .other-project {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
@@ -146,7 +149,7 @@ p {
 .other-project:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url(/media/run-buddy-mockup.jpeg);
-    box-shadow: 4px 4px 20px rgb(50, 50, 50); 
+  box-shadow: 4px 4px 20px rgb(50, 50, 50);
 }
 .project-details {
   margin-top: 370px;
@@ -168,32 +171,27 @@ p {
   color: #f1e05a;
 }
 
-
-
 #about-me {
   border-top: 2px solid;
   border-bottom: 2px solid;
-  margin: 60px 20px;
+  margin: 60px 20px 0 20px;
 }
 
 .about-paragraph {
-text-align: center;
-
+  text-align: center;
 }
-
 
 .selfie {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto 30px;
   border-radius: 50%;
   max-width: 250px;
-
 }
 
 .about-text {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-links a {
