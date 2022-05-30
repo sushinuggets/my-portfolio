@@ -52,23 +52,23 @@ h2 {
 h3 {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 32px;
+  font-size: 64px;
   color: var(--secondary-color);
   font-family: var(--header-font);
 }
 h4 {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
 }
+
 p {
   font-family: var(--secondary-font);
   font-weight: 300;
 }
 
-.about-me {
-  border-top: 2px solid;
-  border-bottom: 2px solid;
+#projects {
+  margin: 50px 0;
 }
 .nav-link {
   transition: all 250ms ease-in-out;
@@ -83,11 +83,9 @@ p {
   color: var(--secondary-color);
   transition: all 250ms ease-in-out;
 }
-
 .nav-link:hover {
   color: var(--secondary-color);
 }
-
 .nav-link:hover::after {
   width: 45px;
 }
@@ -103,7 +101,6 @@ p {
   display: flex;
   column-gap: 6vw;
 }
-
 .project {
   min-width: 24vw;
   height: 480px;
@@ -112,45 +109,95 @@ p {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.project a {
+  padding-right: 15px;
+  color:var(--secondary-color);
   
 }
 .weather {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
     url(/media/weather-check.png);
-    background-position: center;
+  background-position: center;
 }
+.weather:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+    url(/media/weather-check.png);
+  background-position: center;
+  box-shadow: 4px 4px 20px rgb(50, 50, 50);
+}
+
 .landing-page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
     url(/media/total-landing-preview.png);
-    background-position: right;
-  }
-  .other-project {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
-    url(/media/screenshot-1.png);
-    background-position: right;
+  background-position: right;
+}
+.landing-page:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+    url(/media/total-landing-preview.png);
+  background-position: right;
+  box-shadow: 4px 4px 20px rgb(50, 50, 50);
   
 }
-
+.other-project {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    url(/media/run-buddy-mockup.jpeg);
+}
+.other-project:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+    url(/media/run-buddy-mockup.jpeg);
+    box-shadow: 4px 4px 20px rgb(50, 50, 50); 
+}
 .project-details {
   margin-top: 370px;
   padding-left: 15px;
+  font-size: 14px;
 }
-
 .tag {
   color: rgb(54, 54, 54);
   font-family: "Barlow Condensed", sans-serif;
   padding-right: 15px;
 }
-
 .html {
   color: #e34c25;
 }
-
 .css {
   color: #563d7c;
 }
 .js {
   color: #f1e05a;
+}
+
+
+
+#about-me {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin: 60px 20px;
+}
+
+.about-paragraph {
+text-align: center;
+
+}
+
+
+.selfie {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 250px;
+
+}
+
+.about-text {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a {
+  padding-right: 15px;
 }
 
 @media (max-width: 425px) {
@@ -160,8 +207,12 @@ p {
   h2 {
     font-size: 20px;
   }
+  h3 {
+    font-size: 50px;
+    text-align: center;
+  }
   .intro {
-    margin-bottom: 425px;
+    margin-bottom: 400px;
   }
 
   .intro-paragraph {
