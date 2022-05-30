@@ -193,12 +193,38 @@ footer p {
   justify-content: center;
   align-items: center;
 }
+.social-links {
+  padding-left: 20px;
+
+  border-left: 2px solid var(--secondary-color);
+}
+#contact {
+  margin-bottom: 40px;
+}
 
 .social-links a {
   padding-right: 15px;
+  color: white;
+  margin-bottom: 50px;
+}
+.fa {
+  font-size: 24px;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 250ms ease;
+  text-align: center;
+  margin: 0 15px;
+  margin-top: 20px;
 }
 
-@media (max-width: 425px) {
+.fa:hover {
+  font-size: 30px;
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 555px) {
   h1 {
     font-size: 100px;
   }
@@ -230,5 +256,14 @@ footer p {
   }
   .project-details {
     margin-top: 100px;
+  }
+
+  .fa,
+  .social-links {
+    margin-top: 20px;
+  }
+
+  .social-links {
+    margin-bottom: 40px;
   }
 }
