@@ -266,4 +266,8 @@ footer p {
   .social-links {
     margin-bottom: 40px;
   }
+  .about-text {
+    font-size:12px;
+    text-align: left;
+  }
 }
